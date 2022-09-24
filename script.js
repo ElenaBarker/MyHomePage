@@ -66,3 +66,25 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+
+var images;
+
+
+images = ['https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947__480.jpg', 'https://images.unsplash.com/photo-1617503752587-97d2103a96ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXJ0d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80', 'https://i2.wp.com/www.artwindow.co.za/wp-content/uploads/2018/03/AW0325-607x800.jpg', 'https://www.dartfordliving.com/wp-content/uploads/2022/02/Art-from-HMP-Elmley-1.jpg', 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFydHxlbnwwfHwwfHw%3D&w=1000&q=80'];
+let element_pictures = document.getElementById('pictures');
+element_pictures.setAttribute("src", images[0]);
+
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_pictures2 = document.getElementById('pictures');
+  images.unshift(images.slice(-1)[0]);
+  element_pictures2.setAttribute("src", images.pop());
+
+});
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_pictures3 = document.getElementById('pictures');
+  images.push(images[0]);
+  element_pictures3.setAttribute("src", images.shift());
+
+});
