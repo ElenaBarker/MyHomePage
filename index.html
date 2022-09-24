@@ -70,27 +70,7 @@ Make the first test pass by adding a <header> </header>-->
 <div class="d6"> <img src="https://media.istockphoto.com/photos/historic-town-of-perast-at-bay-of-kotor-in-summer-montenegro-picture-id928387450?k=20&m=928387450&s=612x612&w=0&h=PhryDWhBrY8G-2Jxekfo-QQN4ziRWQIlIipYfH5Ihv4=" alt="Montenegro"/>
 </div>
    </div>
-   var images;
-
-
-images = ['https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947__480.jpg', 'https://images.unsplash.com/photo-1617503752587-97d2103a96ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXJ0d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80', 'https://i2.wp.com/www.artwindow.co.za/wp-content/uploads/2018/03/AW0325-607x800.jpg', 'https://www.dartfordliving.com/wp-content/uploads/2022/02/Art-from-HMP-Elmley-1.jpg', 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFydHxlbnwwfHwwfHw%3D&w=1000&q=80'];
-let element_pictures = document.getElementById('pictures');
-element_pictures.setAttribute("src", images[0]);
-
-
-document.getElementById('previous').addEventListener('click', (event) => {
-  let element_pictures2 = document.getElementById('pictures');
-  images.unshift(images.slice(-1)[0]);
-  element_pictures2.setAttribute("src", images.pop());
-
-});
-
-document.getElementById('next').addEventListener('click', (event) => {
-  let element_pictures3 = document.getElementById('pictures');
-  images.push(images[0]);
-  element_pictures3.setAttribute("src", images.shift());
-
-});
+   
    <footer class="c-site-footer" id="Contact"> 
       <p>© 2022 Elena Barker 
       <br>
