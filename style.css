@@ -81,3 +81,9 @@ footer {
      font-size: 26px;
      font-family: Helvecia;
 }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .header.c-site-header, p, .container  {
+    width: 100%;
+  }
