@@ -5,10 +5,7 @@
    ===================
 */
 html,
-body {
-  margin: 0;
-  height: 100%;
-     }
+
 
 /* don't edit this */
 .jest-lite-report__status--pass {
@@ -17,7 +14,10 @@ body {
 .jest-lite-report__errors { display:none }
 
 
-body {background: #EFEAD8;  
+body {background: #EFEAD8;
+      margin: 0;
+      padding: 15px;
+      height: 100%;
       }
 header.c-site-header 
   { height: 50px;
