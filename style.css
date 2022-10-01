@@ -82,8 +82,23 @@ footer {
      font-family: Helvecia;
 }
 
+.button {
+  background-color: #6D8B74
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;}
+
+.button:hover {
+  background-color: #6D8B74
+  color: white;}
+  
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .header.c-site-header, p, .container, img, .d1, .d2, .d3, footer, .art, iframe  {
+  .header.c-site-header, body, footer  {
     width: 100%;
   }
