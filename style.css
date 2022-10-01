@@ -118,7 +118,11 @@ li {
 }
 
 a {
-    text-decoration: none;
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
 }
 .header{
     border-bottom: 1px solid #E2E8F0;
