@@ -84,6 +84,6 @@ footer {
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .header.c-site-header, p, .container, img, .d1, .d2, .d3, footer, art  {
+  .header.c-site-header, p, .container, img, .d1, .d2, .d3, footer, .art, iframe  {
     width: 100%;
   }
