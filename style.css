@@ -40,7 +40,8 @@ img
     padding:10px;
     background: #EFEAD8;
     border: 5px solid #6D8B74;
-    border-radius: 10px;}
+    border-radius: 10px;
+    max-width: 100%; }
 
 iframe 
     {width: 600px;
